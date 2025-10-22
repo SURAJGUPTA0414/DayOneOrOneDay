@@ -80,18 +80,18 @@ console.log('day3 started');
 // Output:
 // 4
 
-function searchForElement(arr, length, target) {
-        // Your implementation here
+// function searchForElement(arr, length, target) {
+//         // Your implementation here
       
-            for (let i = 0; i < arr.length; i++){
-                if (target === arr[i]) {
-                    return i
-                    break;
-                }
-        }
-            return -1
+//             for (let i = 0; i < arr.length; i++){
+//                 if (target === arr[i]) {
+//                     return i
+//                     break;
+//                 }
+//         }
+//             return -1
         
-    }
+//     }
     
 
 console.log('day3 ended');
