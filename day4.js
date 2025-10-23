@@ -147,6 +147,7 @@ for(let i=1;i<=5;i++){
     
 }
 
+pattern();
 
 
 
@@ -156,4 +157,5 @@ for(let i=1;i<=5;i++){
 
 
 
-cons4ole.log('day4 ends here');
+
+console.log('day4 ends here');
