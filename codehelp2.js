@@ -118,36 +118,53 @@
 
 //9
 // Write a function that takes an array of objects and returns an array of all the values of a specified property name.
+// function arrvalueofobj(x,propname){
+//     let xx = x.map((x)=>x[propname])
+//     console.log(xx)
+// }        
+// let arrobj = [
+//     {
+//     name:'suraj',
+//     age :27      
+// },
+// {
+//     name:'shyam',
+//     age :32      
+// },
+// {    
+//     name:'sanchita',
+//     age :2      
+// }   
+// ]   
+// arrvalueofobj(arrobj,'name') 
 
 //10
 // Write a function that takes an array of objects and returns the object with the highest value for a specified property name.
 
-function highestvalue(x){
-    let xx = x.filter((x)=>x.value)
-    console.log(xx)
-}
-
+function objwithhighestvalue(arr,propname){
+    let highest = arr[0];      
+    
+    for(let x of arr){
+        if(x[propname]>highest[propname]){
+           
+            highest = x
+            
+        }   
+    }
+    console.log(highest)
+}       
 let arrobj = [
     {
-    name:'suraj',
-    age :27,
-    value:4
-    
+    name:'suraj',   
+    age :27      
 },
-{
-    name:'shyam',
-    age :32,
-    value:410
-    
-},
-{
-    name:'sanchita',
-    age :2,
-    value:9
-    
-}
-    
-    
-    ]
-    
-    highestvalue(arrobj)
+{   
+    name:'shyam',   
+    age :32      
+},  
+{    
+    name:'sanchita',    
+    age :2      
+}   
+]   
+objwithhighestvalue(arrobj,'age')
