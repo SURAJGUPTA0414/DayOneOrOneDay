@@ -1,4 +1,4 @@
-console.log('day7 stearted');
+console.log('day7 started');
 //1
 // Convert Celsius to Fahrenheit
 // function celsiusToFahrenheit(celsius) {
