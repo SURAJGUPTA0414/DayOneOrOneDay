@@ -29,4 +29,25 @@ console.log('day 12 started');
 
 // }
 
+//3 Nth Fibonacci number
+
+// /**
+//  * @param {number} n - a positive integer
+//  * @return {number}
+//  */
+// var fibonacciNumber = function (n) {
+//     let x = [0, 1];
+
+//     for (let i = 2; i < n;i++) {
+//          let fibo = x[x.length - 1] + x[x.length - 2]
+// // console.log(fibo)
+//     x.push(fibo);
+//     }
+
+   
+//  return (x[n-1])
+    
+// };
+
+
 console.log('day 12 ended');
