@@ -29,7 +29,7 @@ console.log('day 12 started');
 
 // }
 
-//3 Nth Fibonacci number
+//4 Nth Fibonacci number
 
 // /**
 //  * @param {number} n - a positive integer
@@ -49,5 +49,31 @@ console.log('day 12 started');
     
 // };
 
+// Length of Last Word
+
+// var lastWordLength = function (s) {
+
+//     let x = s.trim().split(' ')
+//      return (x[x.length - 1].length)
+// };
+
+//5
+// Find the Second Largest Element
+// class SecondLargest {
+//     /**
+//      * Finds the second largest element in an array.
+//      * 
+//      * @param {number[]} arr - The input array of integers.
+//      * @returns {number} The second largest integer in the array, or -1 if not found.
+//      */
+//     findSecondLargest(arr) {
+        
+//         let x = [... new Set(arr.sort((a, b) => a - b))];
+//         if(x.length === 1) return -1
+//         return (x[x.length - 2])
+        
+     
+//     }
+// }
 
 console.log('day 12 ended');
