@@ -53,8 +53,27 @@ console.log('day 28 started');
 
 
 //4
+// Find factorial of a number
 
+// function factorial(n) {
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     }       
+//     return n * factorial(n - 1);
+// }       
+// console.log(factorial(9));
 //5
+// Check if two strings are anagrams
+
+function areAnagrams(str1, str2) {
+  
+    const normalize = str => str.replace(/\s+/g, '').toLowerCase().split('').sort().join('');
+   
+    return normalize(str1) === normalize(str2);
+}        
+
+console.log(areAnagrams('listen', 'silent')); // true
+console.log(areAnagrams('hello', 'world'));   // false
 
 
 console.log('day 28 ended done');
