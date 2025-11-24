@@ -15,21 +15,40 @@ console.log("Day 36 started");
 //2
 // Check Armstrong Number
 
-function armstrong(num){
-    let str = num.toString();
-    let power = str.length;
-    let sum = 0;
+// function armstrong(num){
+//     let str = num.toString();
+//     let power = str.length;
+//     let sum = 0;
 
-    for(let digit of str){
-        sum += Math.pow(Number(digit), power);
-    }
+//     for(let digit of str){
+//         sum += Math.pow(Number(digit), power);
+//     }
 
-    if(sum === num){
-        console.log(num + ' is an Armstrong number');
-    }else{
-        console.log(num + ' is not an Armstrong number');
-    }
-}
+//     if(sum === num){
+//         console.log(num + ' is an Armstrong number');
+//     }else{
+//         console.log(num + ' is not an Armstrong number');
+//     }
+// }
+
+// function armstrong(num){
+//     let x= num.toString().split('');
+//     let power = x.length;
+//     let sum = 0
+    
+//     for(let dd of x){
+//         sum = sum + Number(dd)**power
+//     }
+//     // console.log(sum);
+    
+//     if(num === sum){
+//         console.log('armstrong')
+//     }else{
+//         console.log('not armstrong')
+//     }
+// }
+
+// armstrong(19)
 
 // Test cases
 armstrong(153); // Armstrong
