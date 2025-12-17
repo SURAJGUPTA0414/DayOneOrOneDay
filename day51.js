@@ -95,8 +95,8 @@ function camelTosnake(str){
 let x= str.replace(/([A-Z])/g,"_$1").toLowerCase();
     console.log(x)
 }   
-camelTosnake('myVariableName')
-camelTosnake('surajGupta')
+camelTosnake('myVariableName');
+camelTosnake('surajGupta');
 
 
 //8
