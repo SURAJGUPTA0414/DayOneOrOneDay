@@ -23,6 +23,26 @@ console.log('day69 started');
 //2
 // 12. Find the max count of consecutive 1’s in an array
 
+function maxConsecutiveOnes(arr) {
+    let maxCount = 0;
+    let currentCount = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === 1) {
+            currentCount++;
+            maxCount = Math.max(maxCount, currentCount);
+        } else {
+            currentCount = 0;
+        }
+    }
+
+    return maxCount;
+}
+
+// Example
+console.log(maxConsecutiveOnes([1, 1, 0, 1, 1, 1])); // 3
+
+
 
 // 13. Given 2 arrays that are sorted [0,3,4,31] and [4,6,30]. Merge them and sort [0,3,4,4,6,30,31] ?
 
@@ -58,6 +78,60 @@ function mergeSortedArrays(arr1, arr2) {
 console.log(mergeSortedArrays([0,3,4,31], [4,6,30]));
 
 
+// 14. Create a function which will accepts two arrays arr1 and arr2.
+// The function should return true if every value in arr1 has its corresponding value squared in array2. The frequency of values must be same. (Effecient)
+
+
+function isSameFrequency(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+
+    let freq1 = {};
+    let freq2 = {};
+
+    for (let val of arr1) {
+        freq1[val] = (freq1[val] || 0) + 1;
+    }
+
+    for (let val of arr2) {
+        freq2[val] = (freq2[val] || 0) + 1;
+    }
+
+    for (let key in freq1) {
+        let squared = key * key;
+        if (!freq2[squared]) return false;
+        if (freq2[squared] !== freq1[key]) return false;
+    }
+
+    return true;
+}
+
+console.log(isSameFrequency([1, 2, 5], [25, 4, 1]));
+
+
+// 15. Given two strings. Find if one string can be formed by rearranging the letters of other string.
+// (Effecient)
+
+// function isAnagram(str1, str2) {
+//     if (str1.length !== str2.length) return false;
+
+//     let freq = {};
+
+//     for (let char of str1) {
+//         freq[char] = (freq[char] || 0) + 1;
+//     }
+
+//     for (let char of str2) {
+//         if (!freq[char]) {
+//             return false;
+//         }
+//         freq[char]--;
+//     }
+
+//     return true;
+// }
+
+console.log(isAnagram("aaz", "zza"));     // false
+console.log(isAnagram("qwerty", "qeywrt")); // true
 
 
 
