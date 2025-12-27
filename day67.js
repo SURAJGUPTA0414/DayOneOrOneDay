@@ -9,7 +9,24 @@ console.log("day67 started");
 //     console.log(x)
     
 // }
-// removeDuplicate([1,3,2,1,5])
+removeDuplicate([1,3,2,1,5])
+
+function removeDuplicate(arr){
+    let unique = [];
+
+    for(let dd of arr){
+        console.log(!unique.includes(dd))
+        if(!unique.includes(dd)){
+            
+
+            unique.push(dd)
+        }
+    }
+    console.log(unique)
+
+
+
+}
 
 //2
 // function findEvenNumber(arr){
