@@ -70,17 +70,17 @@ console.log('day80 started');
 //5
 
 function findMax(arr) {
-  // ❌ invalid input
+  
   if (!Array.isArray(arr)) {
     return false;
   }
 
-  // 🟡 base case
+ 
   if (arr.length === 0) {
     return null;
   }
 
-  // ❌ invalid elements
+ 
   for (let x of arr) {
     if (typeof x !== "number" || Number.isNaN(x)) {
       return false;
