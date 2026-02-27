@@ -2,7 +2,7 @@ console.log('day131 started');
 
 
 
-console.log('day131 ended')console.log('day131 started');
+
 
 /*--------------------------------------------------*/
 // 1️⃣ Find Second Largest Number in an Array
